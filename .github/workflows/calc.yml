@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run calc.py
-        run: printf "10\n3\n+\n" | python gitExercises/actions-gitHub/calc.py
+        run: printf "10\n3\n+\n" | python calc.py
