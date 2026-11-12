@@ -1,0 +1,14 @@
+name: Run Calculator
+
+on: [push]
+
+jobs:
+  run-calculator:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run calc.py
+        run: printf "10\n3\n+\n" | python gitExercises/actions-gitHub/calc.py
