@@ -1,9 +1,12 @@
 def calculate(num1, operator, num2):
     if operator == "+":
         return num1 + num2
-    # TODO: implement subtraction
-    # TODO: implement multiplication
-    # TODO: implement division
+    elif operator == "-":
+        return num1 - num2
+    elif operator == "*":
+        return num1 * num2
+    elif operator == "/":
+        return num1/num2
     else:
         return None
 
