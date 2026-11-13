@@ -1,22 +1,26 @@
-# ask user for input
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+def calculate(num1, operator, num2):
+    if operator == "+":
+        return num1 + num2
+    # TODO: implement subtraction
+    # TODO: implement multiplication
+    # TODO: implement division
+    else:
+        return None
 
-# ask user for operator
-operator = input("Enter operator (+, -, *, /): ")
 
-# calculate result
-if operator == "+":
-    result = num1 + num2
-elif operator == "-":
-    result = num1 - num2
-elif operator == "*":
-    result = num1 * num2
-elif operator == "/":
-    result = num1 / num2
-else:
-    print("Invalid operator")
-    exit()
+if __name__ == "__main__":
+    # ask user for input
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
 
-# print result
-print(num1, operator, num2, "=", result)
+    # ask user for operator
+    operator = input("Enter operator (+, -, *, /): ")
+
+    # calculate result
+    result = calculate(num1, operator, num2)
+
+    if result is None:
+        print("Invalid operator")
+    else:
+        # print result
+        print(num1, operator, num2, "=", result)
