@@ -17,7 +17,7 @@ def test_modulo():
     assert calculate(10, "%", 3) == 1 
 
 def test_invalid_operator():
-    assert calculate(10, "%", 3) is None #will fail
+    assert calculate(10, "//", 3) is None #will fail
 
 
 
