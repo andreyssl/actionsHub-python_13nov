@@ -17,4 +17,4 @@ def test_invalid_operator():
     assert calculate(10, "%", 3) is None #will fail
 
 
-# first test passed and invalid operator is passed, others failed
+# first test passed and invalid operator is passed as well, others failed

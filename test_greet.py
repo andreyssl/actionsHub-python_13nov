@@ -11,5 +11,5 @@ def test_greet_user_different_name(capsys):
     captured = capsys.readouterr()
     assert captured.out == "Hello Bob\n" #will fail
 
-#both tests actualy failed because code executes Hi {name}
-# but assertions expects Hello {name}
+#both tests actualy failed because code executes "Hi {name}""
+# but assertions expects "Hello {name}""
